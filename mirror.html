@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./img/icon.png">
+
+    <title>重庆交通大学LUNA协会 >> 校内镜像</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+          <a class="navbar-brand"><img src="./img/icon.png" width="50" height="50"/></a>
+          <a class="navbar-brand" style="font-family:'Bungee Inline';">&nbsp;&nbsp;&nbsp;&nbsp;重庆交通大学 LUNA 协会</a>
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="./index.html">首页</a></li>
+            <li><a href="./freshman.html">新生指南</a></li>
+            <li><a href="./info.html">校园信息</a></li>
+            <li><a href="./groups.html">社团</a><li>
+            <li class="active"><a href="./mirror.html">校内镜像</a></li>
+            <li><a href="./about.html">关于</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+    <div class="container">
+<center>
+  <span style="font-family:'Bungee Inline';"><h1>LUNA Mirror Is Here!</h1></span>
+</center>
+<hr>
+
+<center>SHA-256指纹：36:05:0A:8B:13:82:C9:AB:46:33:F0:1B:3F:9A:09:AE:BB:87:86:5A:0F:70:7C:E1:D7:E3:8D:7E:E8:7D:BB:EB</center>
+<center>SHA-1指纹：A9:4C:E7:E7:9A:F7:96:A7:A6:F1:07:8F:74:79:86:3B:07:79:CB:48</center>
+<div class="page-header">
+  <h3># 校内镜像服务简介</h3>
+</div><!--/.page-header-->
+  <p>在学校的内网设立镜像服务器，从软件，系统的官方源拉取数据，并且提供一个在连接校内网络但不登陆哆点时的高速，大流量软件/系统下载的解决方案。</p>
+  <div class="page-header">
+    <h3># 校内镜像资源概要</h3>
+  </div><!--/.page-header-->
+  <p>重庆交通大学信息学院云平台提供了一台<b>VM</b>用于LUNA的校园本地镜像</p>
+  <p><b>磁盘空间：300 Gib</b></p>
+  <p><b>内存：8 Gib</b></p>
+  <div class="page-header">
+    <h3># 页面上方的xxx指纹是什么？</h3>
+  </div><!--/.page-header-->
+  <p>那是镜像站的SSL证书指纹，在浏览器中可以看到（各个浏览器查看位置因人而异，大多数浏览器在点击地址栏最左边的一个图标之后可以看到）</p>
+  <center><img src="./img/fingerprint.png"></center>
+  <div class="page-header">
+    <h3># 证书不被信任/出现错误？</h3>
+  </div><!--/.page-header-->
+  <p>由于服务器在校内（无法与外网互通），我们无法申请正式的CA证书，所以我们决定自己签发一个SSL证书部署于服务器上。</p>
+  <p>出现证书错误不要惊惶，点击“查看证书”，手动比对我们提供的对应的xxx指纹，如果相互符合则可以安心地继续访问。</p>
+  <b>如果未进行比对就直接访问，有可能被MITM（Man In The Middle）攻击！这样的话效果就和没有加密传输一样了：（</b>
+  <p>详细信息可以点击“进入镜像站”下方的“查看详情”按钮查看。</p>
+  <hr>
+  <div class="alert alert-info"><center>服务器IP：<b>10.1.74.132</b>，接入校内任何一个网络（包括网线接入和连接至cqjtu-wlan的用户）即可访问！理论下载速度1.5～10Mib/s</center></div>
+  <div class="alert alert-danger"><center>提示：LunaLuna.org网站服务器位于美国弗吉尼亚亚马逊AWS节点，在国内访问可能较慢，校内用户可以添加服务器IP至收藏夹方便快速进入进入镜像站。</center></div>
+  <div class="col-md-6 col-sm-12 col-xs-12">
+    <a href="https://10.1.74.132" button type="button" class="btn btn-success btn-block">进入镜像站（SSL）</a>
+  </div><!--/.col-md-6 col-sm-12 col-xs-12-->
+  <div class="col-md-6 col-sm-12 col-xs-12">
+    <a href="http://10.1.74.132" button type="button" class="btn btn-danger btn-block">查看详情（Non-SSL）</a>
+  </div><!--/.col-md-6 col-sm-12 col-xs-12-->
+
+    </div> <!-- /container -->
+
+    <div id="footerwrap">
+<div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <p>LUNA是由重庆交通大学学生建立的非官方计算机协会，旨在能改善体验，方便查询信息。</p>
+        <span style="font-family:'Pacifico';"><p>Lizihu Utopia LUNA Association</p></span>
+      </div>
+        <div class="col-sm-4">
+          <center><h2><b>明德行远，交通天下</b></h2></center>
+          <center><h3><b>CODE IS POETRY</b></h3></center>
+        </div>
+
+        <div class="col-sm-4">
+          <p>人人有权享有主张和发表意见的自由；此项权利包括持有主张而不受干涉的自由，和通过任何媒介和不论国界寻求、接受和传递消息和思想的自由。</p>
+          <p><世界人权宣言，第19条，1948></p>
+        </div>
+    </div><!--/.row -->
+</div><!--/.container -->
+</div><!--/.footerwrap -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="./js/jquery.min.js"><\/script>')</script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
