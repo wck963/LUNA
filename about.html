@@ -14,6 +14,7 @@
     <link href="./css/bootstrap.min.css" rel="stylesheet">
 
     <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/timeline.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -29,7 +30,7 @@
     <![endif]-->
   </head>
 
-  <body>https://start.fedoraproject.org/
+  <body>
 
     <!-- Static navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -60,17 +61,74 @@
 
     <div class="container">
       <div class="page-header">
-        <h1># LUNA的全称？</h1>
+        <h1>LUNA编年史</h1>
       </div><!-- /.page-header -->
-      <li>Lizihu Utopia LUNA Association(官方)</li>
-      <li>Linux User Nerds Association</li>
-      <li>Linux User Network Administrators</li>
-      <li>......</li>
-      <div class="page-header">
-        <h1># 关于</h1>
-      </div><!-- /.page-header -->
-      <p>网站创立之初的想法是重写一个更加优雅的学校网站首页。后经讨论认为这样做不会被批准（即将学校的首页换成我们的页面），便转型成为一个协会。LUNA的名字也由此而来。<br />
-      作为一个非官方，非盈利项目，本站的建设离不开群众的支持，下方列出了所有对LUNA协会作出过贡献的人。谢谢你们的参与！</p>
+      <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="./img/n0vad3v.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>创世纪</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      重庆交通大学LUNA协会创立于2016-10-24！此时我们完成了名称的确立——LUNA。初期成员确认：3人
+                    </p>
+                  </div>
+                </div>
+                <div class="line"></div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="./img/crash.png" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>屡屡受阻</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      在校社联申请成为正式社团，在向网络中心申请服务器时被拒。
+                    </p>
+                  </div>
+                </div>
+                <div class="line"></div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="./img/icon3.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>获得支持</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      在信息学院云平台的支持下，我们有了一台校内的Linux服务器（现用于“LUNA校内镜像站”，“LUNA校内文件交换站”），吸引了部分学生和老师的使用。此时LUNA依然基本处于地下运作状态，未做任何对外宣传。
+                    </p>
+                  </div>
+                </div>
+                <div class="line"></div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="./img/icon2.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>逐步开放</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      在信息学院和马蒂亚斯国际学院/国际学院的迎新晚会中提供弹幕支持，在这两个学院逐渐获得了知名度。同时，LUNA团队新招入一为大佬～
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
       <center><div class="page-header">
         <h1>贡献列表</h1>
       </div><!-- /.page-header --></center>
@@ -109,7 +167,7 @@
     </table>
 
 <div class="page-header">
-  <h3># 网站建设技术</h3>
+  <h3># 网站建设技术/服务器基础设施</h3>
 </div><!-- /.page-header -->
 
 <table class="table">
@@ -121,8 +179,13 @@
       </tr>
       <tbody>
         <th>重庆交通大学信息学院云平台</th>
-        <th>重庆交通大学</th>
-        <th>用于LUNA校内镜像的VM服务器</th>
+        <th>信息科学与工程学院</th>
+        <th>用于校内的VM服务器</th>
+      </tbody>
+      <tbody>
+        <th>所有LUNA成员</th>
+        <th>*</th>
+        <th>LUNA校外服务器</th>
       </tbody>
     </thead>
 </table>
@@ -156,6 +219,11 @@
       <th>Kirin</th>
       <th>信息科学与工程学院</th>
       <th>￥100</th>
+    </tbody>
+    <tbody>
+      <th>*莹</th>
+      <th>信息科学与工程学院</th>
+      <th>￥20</th>
     </tbody>
 </table>
 
