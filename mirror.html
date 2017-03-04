@@ -58,24 +58,29 @@
 
 
     <div class="container">
-  <div class="alert alert-danger"><center>由于南岸学院云平台机房停电，现在镜像站已停止工作，恢复时间未知。</center></div>
 <center>
-  <span style="font-family:'Bungee Inline';"><h1>LUNA Mirror Is Here!</h1></span>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+  <span style="font-family:'Bungee Inline';"><h1>LUNA Mirror is BACK！</h1></span>
+			</div>
+        <div class="col-md-8 col-sm-12 col-xs-12">
+  <div class="jumbotron">
+	  <h1>总IP</h1>
+	  <h1>202.202.243.125</h1>
+	  </div>
+	  </div>
 </center>
 <hr>
 
-<center>SHA-256指纹：36:05:0A:8B:13:82:C9:AB:46:33:F0:1B:3F:9A:09:AE:BB:87:86:5A:0F:70:7C:E1:D7:E3:8D:7E:E8:7D:BB:EB</center>
-<center>SHA-1指纹：A9:4C:E7:E7:9A:F7:96:A7:A6:F1:07:8F:74:79:86:3B:07:79:CB:48</center>
+<center>SHA-256指纹：<code>EB:3E:BB:5C:33:1E:F2:E9:07:A4:AB:A7:2C:FC:8C:35:AA:F0:2F:0E:28:7D:E5:B0:10:B9:83:4A:EA:5A:63:A8</center></code>
+	<center>SHA-1指纹：<code>F0:34:BD:C1:04:BD:B1:25:4D:62:34:E1:89:40:25:6A:62:18:41:86</center></code>
 <div class="page-header">
-  <h3># 校内镜像服务简介</h3>
+  <h3># 镜像服务简介</h3>
 </div><!--/.page-header-->
   <p>在学校的内网设立镜像服务器，从软件，系统的官方源拉取数据，并且提供一个在连接校内网络但不登陆哆点时的高速，大流量软件/系统下载的解决方案。</p>
   <div class="page-header">
-    <h3># 校内镜像资源概要</h3>
+    <h3># 镜像资源概要</h3>
   </div><!--/.page-header-->
-  <p>重庆交通大学信息学院云平台提供了一台<b>VM</b>用于LUNA的校园本地镜像</p>
-  <p><b>磁盘空间：300 Gib</b></p>
-  <p><b>内存：8 Gib</b></p>
+  <p>Nova的一台Raspberry Pi，外挂250Gib硬盘，接入中国教育网。</p>
   <div class="page-header">
     <h3># 页面上方的xxx指纹是什么？</h3>
   </div><!--/.page-header-->
@@ -84,20 +89,9 @@
   <div class="page-header">
     <h3># 证书不被信任/出现错误？</h3>
   </div><!--/.page-header-->
-  <p>由于服务器在校内（无法与外网互通），我们无法申请正式的CA证书，所以我们决定自己签发一个SSL证书部署于服务器上。</p>
+  <p>由于服务器在国内（域名未备案），我们无法申请正式的CA证书，所以我们决定自己签发一个SSL证书部署于服务器上。</p>
   <p>出现证书错误不要惊惶，点击“查看证书”，手动比对我们提供的对应的xxx指纹，如果相互符合则可以安心地继续访问。</p>
   <b>如果未进行比对就直接访问，有可能被MITM（Man In The Middle）攻击！这样的话效果就和没有加密传输一样了：（</b>
-  <p>详细信息可以点击“进入镜像站”下方的“查看详情”按钮查看。</p>
-  <hr>
-  <div class="alert alert-info"><center>服务器IP：<b>10.1.74.132</b>，接入校内任何一个网络（包括网线接入和连接至cqjtu-wlan的用户）即可访问！理论下载速度1.5～10Mib/s</center></div>
-  <div class="alert alert-danger"><center>提示：lunaluna.org网站服务器位于瑞典Gothenburg节点，在国内访问可能较慢，校内用户可以添加服务器IP至收藏夹方便快速进入进入镜像站。</center></div>
-  <div class="col-md-6 col-sm-12 col-xs-12">
-    <a href="https://10.1.74.132" button type="button" class="btn btn-success btn-block">进入镜像站（SSL）</a>
-  </div><!--/.col-md-6 col-sm-12 col-xs-12-->
-  <div class="col-md-6 col-sm-12 col-xs-12">
-    <a href="http://10.1.74.132" button type="button" class="btn btn-danger btn-block">查看详情（Non-SSL）</a>
-  </div><!--/.col-md-6 col-sm-12 col-xs-12-->
-
     </div> <!-- /container -->
 
     <div id="footerwrap">
