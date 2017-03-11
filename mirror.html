@@ -58,21 +58,22 @@
 
 
     <div class="container">
-<center>
-        <div class="col-md-4 col-sm-12 col-xs-12">
+	<center>
+        <div class="col-md-3 col-sm-12 col-xs-12">
   <span style="font-family:'Bungee Inline';"><h1>LUNA Mirror is BACK！</h1></span>
+		</div>
+
+        <div class="col-md-9 col-sm-12 col-xs-12">
+			<div class="jumbotron">
+				<h1>202.202.243.125</h1>
+				<h1>mirrors.lunaluna.org</h1>
 			</div>
-        <div class="col-md-8 col-sm-12 col-xs-12">
-  <div class="jumbotron">
-	  <h1>总IP</h1>
-	  <h1>202.202.243.125</h1>
 	  </div>
-	  </div>
-</center>
+	</center>
 <hr>
 
-<center>SHA-256指纹：<code>EB:3E:BB:5C:33:1E:F2:E9:07:A4:AB:A7:2C:FC:8C:35:AA:F0:2F:0E:28:7D:E5:B0:10:B9:83:4A:EA:5A:63:A8</center></code>
-	<center>SHA-1指纹：<code>F0:34:BD:C1:04:BD:B1:25:4D:62:34:E1:89:40:25:6A:62:18:41:86</center></code>
+<center>SHA-256指纹：<code>CA:94:54:67:F8:16:04:6B:1C:AF:1C:37:73:CB:A0:21:52:E1:D0:A2:CE:18:BC:F5:B4:59:38:C1:D9:A3:EC:F9</code></center>
+<center>SHA-1指纹：<code>68:84:A8:E1:D0:A6:9F:5F:3D:AA:EA:6C:5C:63:B8:F1:EA:74:7A:06</code></center>
 <div class="page-header">
   <h3># 镜像服务简介</h3>
 </div><!--/.page-header-->
@@ -89,7 +90,8 @@
   <div class="page-header">
     <h3># 证书不被信任/出现错误？</h3>
   </div><!--/.page-header-->
-  <p>由于服务器在国内（域名未备案），我们无法申请正式的CA证书，所以我们决定自己签发一个SSL证书部署于服务器上。</p>
+  <p>一般只有校内用户会出现这种情况，由于我们的SSL证书是签发给域名（mirrors.lunaluna.org）的，而在校内未登录哆点时无法DNS，所以只能直接访问
+  IP（202.202.243.125），此时由于域名和IP不一样，所以会报个错。
   <p>出现证书错误不要惊惶，点击“查看证书”，手动比对我们提供的对应的xxx指纹，如果相互符合则可以安心地继续访问。</p>
   <b>如果未进行比对就直接访问，有可能被MITM（Man In The Middle）攻击！这样的话效果就和没有加密传输一样了：（</b>
     </div> <!-- /container -->
